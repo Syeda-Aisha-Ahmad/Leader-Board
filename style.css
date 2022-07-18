@@ -36,6 +36,8 @@ hr {
 
 .top-player {
     background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 40px;
 }
 
 .players {
@@ -56,4 +58,37 @@ hr {
 
 .player p {
     margin-left: 16px;
+}
+
+
+/* Top Blog Section */
+
+.parent-blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    margin-left: 30px;
+}
+
+.blogs {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.blogs img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-info p {
+    color: gray;
+}
+
+.blog-info span {
+    color: #562EFF;
 }
