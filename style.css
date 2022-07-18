@@ -34,7 +34,8 @@ hr {
 
 /* Top Players Section */
 
-.top-player {
+.top-player,
+.latest-course {
     background-color: #fff;
     border-radius: 10px;
     padding-bottom: 40px;
@@ -65,7 +66,7 @@ hr {
 
 .parent-blogs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
     margin-left: 30px;
 }
@@ -91,4 +92,65 @@ hr {
 
 .blog-info span {
     color: #562EFF;
+}
+
+
+
+
+/* Latest Course Section */
+
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto 0 0;
+}
+
+.course {
+    margin-left: 30px;
+    padding: 10px;
+    box-shadow:
+        inset 0 -3em 3em rgba(70, 68, 68, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(103, 100, 100, 0.3);
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+}
+
+.filled {
+    color: #FFC014;
+    font-size: 12px;
+    padding-bottom: 10%;
+}
+
+.unfilled {
+    color: grey;
+    font-size: 12px;
+    padding-bottom: 10%;
+}
+
+.rating {
+    color: gray;
+    margin-left: 11px;
+}
+
+.fa-clock {
+    margin-right: 5px;
+}
+
+.red-button {
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    margin-left: 11px;
+    padding: 2px 7px;
+    border-radius: 35px;
 }
