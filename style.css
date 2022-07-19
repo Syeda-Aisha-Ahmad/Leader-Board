@@ -11,13 +11,13 @@ body {
 }
 
 main {
-    width: 870px;
+    width: 70%;
     height: 679px;
 }
 
 hr {
     border: none;
-    width: 807px;
+    width: 90%;
     height: 1px;
     margin-top: 30px;
     background-color: #D1D1D1;
@@ -59,6 +59,119 @@ hr {
 
 .player p {
     margin-left: 16px;
+}
+
+@media screen and (max-width:1230px) {
+
+    main {
+        width: 770px;
+        height: 579px;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 29px;
+        margin-left: 30px;
+    }
+
+    /* Top Blog Section */
+
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blogs img {
+        text-align: left;
+    }
+
+    .blog-title,
+    .course h3 {
+        font-size: 16px;
+    }
+
+    .blogs p,
+    span,
+    .course p {
+        font-size: 14px;
+    }
+
+    /* Latest Course Section */
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        row-gap: 30px;
+    }
+
+    .course {
+        margin-left: 50px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:664px) {
+
+    .players {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 29px;
+        margin-left: 30px;
+    }
+
+    .player img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .player p {
+        margin-left: 26px;
+        font-size: 20px;
+    }
+
+    /* Top Blog Section */
+
+    .parent-blogs {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        row-gap: 30px !important;
+        margin-left: 30px;
+    }
+
+    .blog-title,
+    .course h3 {
+        font-size: 20px;
+    }
+
+    .blogs p,
+    span,
+    .course p {
+        font-size: 16px;
+    }
+
+    /* Latest Course Section */
+
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        row-gap: 30px;
+    }
+
+    .course {
+        margin-left: 50px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .course-info {
+        padding-left: 30%;
+    }
+
 }
 
 
@@ -119,6 +232,10 @@ hr {
 .course img {
     width: 224px;
     height: 104px;
+}
+
+.course p {
+    color: #FF4A60;
 }
 
 .course-info {
